@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Select</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="docs/css/bootstrap-3.3.2.min.css" type="text/css">
+    <link rel="stylesheet" href="docs/css/bootstrap-example.css" type="text/css">
+    <link rel="stylesheet" href="docs/css/bootstrap-example.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="dist/css/bootstrap-multiselect.css" type="text/css">
+
+    <script type="text/javascript" src="docs/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="docs/js/bootstrap-3.3.2.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap-multiselect.js"></script>
+
+</head>
+<body class="background">
+
+    <div style="text-align: center">
+
+        <form class="form-horizontal" >
+            <div class="form-group">
+
+                <div class="col-sm-12 btn-position" >
+                    <label class="col-sm-12 control-label lable-games" >Please select the games you wish to play</label>
+                    <select id="multiSelectCheckBox" name="multiselect[]" multiple="multiple" required>
+                        <option value="1">Hungry Birds</option>
+                        <option value="2">Car Rush</option>
+                        <option value="3">Archery</option>
+                        <option value="4">Tetra Block</option>
+                        <option value="5">Logo Quiz</option>
+                        <option value="6">Power Of 2</option>
+                    </select>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#multiSelectCheckBox').multiselect({
+                includeSelectAllOption: true,
+                enableFiltering: true
+            });
+        });
+    </script>
+
+
+</body>
+</html>

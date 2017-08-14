@@ -1,0 +1,17 @@
+.background{
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.btn-position{
+    position: absolute; top: 30%;
+}
+
+.lable-games{
+    color: white;
+    text-align: center !important;
+    font-size: 30px !important;
+    font-weight: 300;
+    margin-bottom: 30px !important;
+}
